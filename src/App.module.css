@@ -1,0 +1,43 @@
+.App {
+}
+
+.logo span {
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.header {
+  background-color: #e95420;
+  display: flex;
+  align-items: center;
+  font-size: calc(10px + 1.5vmin);
+  color: white;
+}
+
+.container {
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+}
+
+.link {
+  color: #b318f0;
+}
+
+.posts {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  background-color: rgb(246, 246, 239);
+  list-style-type: none;
+}
+
+.post {
+  padding: 1rem;
+}
+
+.posts li {
+  padding: 0.25rem;
+}
