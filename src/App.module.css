@@ -1,4 +1,18 @@
+:root {
+  --primary-color: #e95420;
+  --secondary-color: rgb(246, 246, 239);
+  --accent-color: #868e96;
+  --text-color: white;
+}
+
 .App {
+}
+
+.logo {
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 1rem 0;
+  display: block;
 }
 
 .logo span {
@@ -9,11 +23,11 @@
 }
 
 .header {
-  background-color: #e95420;
+  background-color: var(--primary-color);
   display: flex;
   align-items: center;
   font-size: calc(10px + 1.5vmin);
-  color: white;
+  color: var(--text-color);
 }
 
 .container {
@@ -22,15 +36,11 @@
   margin: auto;
 }
 
-.link {
-  color: #b318f0;
-}
-
 .posts {
   padding: 0;
   margin: 0;
   min-height: 100vh;
-  background-color: rgb(246, 246, 239);
+  background-color: var(--secondary-color);
   list-style-type: none;
 }
 
@@ -38,6 +48,29 @@
   padding: 1rem;
 }
 
-.posts li {
-  padding: 0.25rem;
+.posts_item {
+  padding: 1rem;
+}
+
+.posts_item sub {
+  display: flex;
+  align-items: center;
+}
+
+.posts_item sub span {
+  color: var(--primary-color);
+}
+
+.posts_item a {
+  color: var(--primary-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.author:before {
+  content: "\e0a5";
+}
+
+.comment_author {
+  color: var(--primary-color);
 }

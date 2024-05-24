@@ -1,12 +1,13 @@
+import { A } from "@solidjs/router";
 import styles from "./App.module.css";
 
 export const Header = () => {
   return (
     <header class={styles.header}>
       <div class={styles.container}>
-        <p class={styles.logo}>
+        <A class={styles.logo} href="/">
           <span>B</span>Hacker News
-        </p>
+        </A>
       </div>
     </header>
   );

@@ -1,3 +1,5 @@
+import { Comment } from "./comments";
+
 export interface Post {
   comments_count: number;
   domain: string;
@@ -9,4 +11,5 @@ export interface Post {
   type: "link" | "ask" | "job" | "show" | "poll" | "pollopt" | "comment";
   url: string;
   user: string;
+  comments?: Comment[];
 }

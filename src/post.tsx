@@ -2,6 +2,7 @@ import { useParams } from "@solidjs/router";
 import { createResource } from "solid-js";
 import { Post as PostType } from "./post-type";
 import styles from "./App.module.css";
+import { Comments } from "./comments";
 
 const fetchPost: (id: string) => Promise<PostType> = async (id) => {
   const response = await fetch(`https://node-hnapi.herokuapp.com/item/${id}`);
@@ -22,7 +23,9 @@ export const Post = () => {
           </sub>
         </div>
       </section>
-      <section class="comments">Comments</section>
+      <section class="comments">
+        <Comments comments={data()?.comments} />
+      </section>
     </div>
   );
 };
